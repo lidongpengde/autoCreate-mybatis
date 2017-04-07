@@ -24,7 +24,8 @@
         <javaModelGenerator targetPackage="com.soft.model"
                             targetProject="C:\Users\lidongpeng\Downloads\generator-mybatis-generator-1.3.5\core\generate\src\main\java">
             <!-- enableSubPackages:是否让schema作为包的后缀 -->
-            <property name="enableSubPackages" value="true" />
+            <!--<property name="enableSubPackages" value="true" />-->
+            <property name="mapUnderscoreToCamelCase" value="true" />
             <!-- 从数据库返回的值被清理前后的空格 -->
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
@@ -42,7 +43,7 @@
         <table schema="cxy" tableName="message" domainObjectName="Message"
                enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" selectByExampleQueryId="false" >
-            <property name="useActualColumnNames" value="true"/>
+            <property name="mapUnderscoreToCamelCase" value="true"/>
         </table>
     </context>
 </generatorConfiguration>
